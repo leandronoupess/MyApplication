@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Todo Liste:"
+            android:textColor="#ffff556e"
+            android:textSize="25sp"
+            android:gravity="center">
+
+        </TextView>
+
+        <EditText
+            android:id="@+id/search_bar_list_todoList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Suchen....."
+            android:textColor="#ffff556e"
+            android:textColorHint="#ffff556e"
+            android:backgroundTint="#ffff556e"
+            android:inputType="textImeMultiLine"
+            android:textSize="20sp">
+        </EditText>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ListViewTodo">
+        </ListView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addTodoListButton"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/circle_background_btn"
+        android:backgroundTint="#FF2BFAFA"
+        android:text="+"
+        android:textColor="@color/black"
+        android:textSize="40dp"></Button>
+
+
+</RelativeLayout>
